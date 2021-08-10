@@ -1,0 +1,17 @@
+.circularSquare {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  height: auto;
+}
+
+div.center {
+  margin: auto;
+}

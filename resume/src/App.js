@@ -1,7 +1,6 @@
-import AboutPage from "./pages/about.js";
+import AboutPage from "./pages/about/about.js";
 import ExperiencePage from "./pages/experience.js";
 import { Switch, Route } from "react-router-dom";
-import "./App.css";
 
 function App() {
   return (
