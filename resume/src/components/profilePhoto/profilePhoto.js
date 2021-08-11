@@ -1,11 +1,10 @@
 import React from "react";
 import graduationPhoto from "../../images/sittingGraduationPhoto.png";
-import './profilePhoto.modules.css';
+import './profilePhoto.css';
+import '../../index.css';
 
 export default function ProfilePhoto() {
   return (
-    <div>
-      <img alt="profile" className="circularSquare center" src={graduationPhoto} />
-    </div>
+      <img alt="profile" className="circular-square center" src={graduationPhoto} />
   );
 }
