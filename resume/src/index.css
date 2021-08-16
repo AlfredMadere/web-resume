@@ -1,3 +1,4 @@
+/* general styling rules */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -8,12 +9,17 @@ body {
   background-color: rgb(185, 219, 219);
 }
 
+h1 {
+  font: "Ubuntu";
+  color:darkgreen;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
-
+/* color themes */
 .color-theme-1 {
   background-color: coral;
 }
@@ -26,6 +32,8 @@ code {
   background-color: rgb(234, 115, 238);
 }
 
+/* specific DIV styling rules */
+
 div.center {
   margin: auto;
   
@@ -35,6 +43,86 @@ div.color-panel{
   position: absolute;
   z-index: 1;
 }
+
+div.frame {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+
+/* IMG styling rules */
+
+img.center {
+  max-height: 100%;
+  max-width: 100;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 2;
+}
+
+img.circular-square {
+  border-radius: 50%;
+  border: 0px solid;
+  border-color: darkgrey;
+  width: 30%;
+  max-width: 180px;
+  height: auto;
+  box-shadow: -5px 5px 19px black;
+}
+
+img.subtle-background {
+  opacity: 50%;
+}
+
+/* HEADER styling rules */
+
+h1.center {
+  text-align: center;
+  vertical-align: middle;
+  margin: auto;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 70px;
+  grid-gap: 3rem;
+  height: auto;
+
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+/*
+.grid-item-1{
+   grid-row-start: 1;
+   grid-row-end: 3;
+}
+
+.grid-item-3{
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+*/
+
+
+
+/* specific ID styling rules */
+
 
 #header-color-panel-top {
   width: 100%;
@@ -52,27 +140,18 @@ div.color-panel{
   
 }
 
-div.master-container {
-  position: relative;
+#greeting-text {
+  position: absolute;
+  top: 83%;
+  z-index: 2;
   width: 100%;
-  z-index: 0;
 }
 
-img.center {
-  display: block;
-  margin: auto;
-  width: 30%;
-  height: auto;
-  padding: 60px;
-  position: relative;
-  z-index: 3;
+#home-top {
+  height: 300px;
 }
 
-.circular-square {
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-}
-
-
-
+/* 
+this is some kind of coding joke haha code code code
+ODjoaijdslkjakdf dkfiejal dcode for each yaydahamdk cs major lmao stack over flowww
+*/

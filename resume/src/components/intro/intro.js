@@ -1,14 +1,15 @@
 import React from "react";
 import ProfilePhoto from "../profilePhoto/profilePhoto";
+import codingJoke from "../../images/codingJoke.png";
 import "./intro.css";
 import "../../index.css";
 
 export default function Intro() {
   return (
-    <div className="master-container">
-      <div className="color-panel color-theme-1" id="header-color-panel-top">some shit</div>
-      <div className="color-panel color-theme-2" id="header-color-panel-bottom">some other shit</div>
+    <div className="frame" id="home-top">
+      <img alt="profile" className="subtle-background" src={codingJoke} />
       <ProfilePhoto />
+      <h1 id="greeting-text" className="center"> Hi, I'm Alfred</h1>
     </div>
   );
 }
