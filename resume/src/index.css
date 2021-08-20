@@ -44,12 +44,20 @@ div.color-panel{
   z-index: 1;
 }
 
-div.frame {
-  width: 100%;
-  height: auto;
-  display: inline-block;
-  vertical-align: top;
-  position: relative;
+
+
+/* Anchor styling rules*/
+
+a.nostyle:link {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
+}
+
+a.nostyle:visited {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
 }
 
 /* IMG styling rules */
@@ -72,7 +80,7 @@ img.circular-square {
   border-radius: 50%;
   border: 0px solid;
   border-color: darkgrey;
-  width: 30%;
+  width: 100%;
   max-width: 180px;
   height: auto;
   box-shadow: -5px 5px 19px black;
@@ -100,11 +108,12 @@ h1.center {
 
 }
 
-.grid-container > div {
+.grid-container > a, .grid-container > div {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
+  border-radius: 5px;
 }
 
 /*
@@ -142,14 +151,23 @@ h1.center {
 
 #greeting-text {
   position: absolute;
-  top: 83%;
+  bottom: 10px;
   z-index: 2;
   width: 100%;
+  text-align: center;
 }
 
 #home-top {
-  height: 300px;
+  height: 350px;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+
 }
+
+
 
 /* 
 this is some kind of coding joke haha code code code

@@ -1,7 +1,13 @@
 import React from "react";
 import Intro from "../../components/intro/intro.js";
+import PageSummary from "../../components/pageSummary/pageSummary.js";
 import "./home.css";
 import "../../index.css";
+
+const aboutMeSummary = "I am lit and I am cool this is all about me you fool.";
+const experienceSummary = "I have a lot of experience and I am very smart.";
+const educationSummary = "I am one educated motherfucker let me tell you. Click to learn more";
+const skillsSummary = "I have some absolutley raw fucking skills";
 
 export default function AboutPage() {
   return (
@@ -9,13 +15,12 @@ export default function AboutPage() {
       <Intro />
       <div className="post-intro">
         <div className="grid-container">
-        <div className="grid-item-1">1</div>
-        <div className="grid-item-2">2</div>
-        <div className="grid-item-3">3</div>
-        <div className="grid-item-4">4</div>
+          <PageSummary page="About" summary={aboutMeSummary}/>
+          <PageSummary page="Expereince" summary={experienceSummary}/>
+          <PageSummary page="Education" summary={educationSummary}/>
+          <PageSummary page="Skills" summary={skillsSummary}/>
+        </div>
       </div>
-    </div>
-      
     </div>
   );
 }

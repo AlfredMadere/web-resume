@@ -1,0 +1,36 @@
+.nav-container {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  z-index: 2;
+}
+
+div.nav-container > a {
+  margin: 0;
+  font: italic small-caps bold 15px/150% Arial, Helvetica, sans-serif;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  transition: transform 0.2s;
+}
+
+.nav-container:hover > .nav-1 {
+  transform: translate(-150px, 0);
+  font-size: 18px;
+}
+
+.nav-container:hover > .nav-2 {
+  transform: translate(-129.9px, -129.9px);
+  font-size: 18px;
+}
+
+.nav-container:hover > .nav-3 {
+  transform: translate(0px, -129.9px);
+  font-size: 18px;
+}
+
+.nav-container:hover > .nav-4 {
+  transform: translate(129.9px, 0px);
+  font-size: 18px;
+}
