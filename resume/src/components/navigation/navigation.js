@@ -10,16 +10,27 @@ export default class Navigation extends React.Component {
 
   render() {
     return (
-      <div className="nav-container">
-        <img
+      <div className={`nav-container ${this.props.mode}`}>
+        <a className="nostyle center front nav-image-holder" href="/" target="blank">
+          <img
           alt="profile"
           className="circular-square center"
           src={graduationPhoto}
         />
-        <a className="nav-1">About</a>
-        <a className="nav-2">Expereince</a>
-        <a className="nav-3">Education</a>
-        <a className="nav-4">Skills</a>
+        </a>
+        
+        <a className="nav-1 nostyle" href="/about">
+          About
+        </a>
+        <a className="nav-2 nostyle" href="/expereince">
+          Expereince
+        </a>
+        <a className="nav-3 nostyle" href="/education">
+          Education
+        </a>
+        <a className="nav-4 nostyle" href="/skills">
+          Skills
+        </a>
       </div>
     );
   }

@@ -1,8 +1,20 @@
 .nav-container {
   position: absolute;
-  width: 300px;
-  height: 300px;
+  width: 150px;
+  height: 150px;
   z-index: 2;
+}
+
+.nav-container.dropdown-mode {
+    width: 90px;
+    height: 90px;
+    left: 20px;
+    z-index: 2;
+}
+
+a.nav-image-holder {
+    height: 100%;
+    width: 100%
 }
 
 div.nav-container > a {
@@ -12,25 +24,51 @@ div.nav-container > a {
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
-  transition: transform 0.2s;
+  transition: transform 0.3s .5s, text-shadow 0.5s ease;
 }
 
-.nav-container:hover > .nav-1 {
-  transform: translate(-150px, 0);
-  font-size: 18px;
+/*EXPLOSION ANIMAITON*/
+.nav-container.explosion-mode:hover > .nav-1 {
+  transform: translate(calc(-50% - 150px), 0) scale(1.7);
+  transition: .2s ease 0s;
 }
 
-.nav-container:hover > .nav-2 {
-  transform: translate(-129.9px, -129.9px);
-  font-size: 18px;
+.nav-container.explosion-mode:hover > .nav-2 {
+  transform: translate(calc(-50% - 129.9px), -129.9px) scale(1.7);
+  transition: .2s ease 0s;
 }
 
-.nav-container:hover > .nav-3 {
-  transform: translate(0px, -129.9px);
-  font-size: 18px;
+.nav-container.explosion-mode:hover > .nav-3 {
+  transform: translate(calc(-50% + 129.9px), -129.9px) scale(1.7);
+  transition: .2s ease 0s;
 }
 
-.nav-container:hover > .nav-4 {
-  transform: translate(129.9px, 0px);
-  font-size: 18px;
+.nav-container.explosion-mode:hover > .nav-4 {
+  transform: translate(calc(-50% + 150px), 0px) scale(1.7);
+  transition: .2s ease 0s;
+}
+
+/*DROPDOWN ANIMATION*/
+.nav-container.dropdown-mode:hover > .nav-1 {
+    transform: translate(-50%, calc(100% + 2.5em)) scale(1.7);
+    transition: .2s ease 0s;
+  }
+  
+  .nav-container.dropdown-mode:hover > .nav-2 {
+    transform: translate(-50%, calc(100% + 4.5em)) scale(1.7);
+    transition: .2s ease 0s;
+  }
+  
+  .nav-container.dropdown-mode:hover > .nav-3 {
+    transform: translate(-50%, calc(100% + 6.5em)) scale(1.7);
+    transition: .2s ease 0s;
+  }
+  
+  .nav-container.dropdown-mode:hover > .nav-4 {
+    transform: translate(-50%, calc(100% + 8.5em)) scale(1.7);
+    transition: .2s ease 0s;
+  }
+
+.nav-container > a:hover {
+    text-shadow: -2px 2px green;
 }
