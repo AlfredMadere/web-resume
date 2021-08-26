@@ -9,6 +9,7 @@
     width: 90px;
     height: 90px;
     left: 20px;
+    top: 20px;
     z-index: 2;
 }
 
@@ -19,7 +20,7 @@ a.nav-image-holder {
 
 div.nav-container > a {
   margin: 0;
-  font: italic small-caps bold 15px/150% Arial, Helvetica, sans-serif;
+  color: white;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -70,5 +71,5 @@ div.nav-container > a {
   }
 
 .nav-container > a:hover {
-    text-shadow: -2px 2px green;
+    text-shadow: -2px 2px rgb(49, 49, 49);
 }

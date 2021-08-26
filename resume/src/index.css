@@ -11,7 +11,11 @@ body {
 
 h1 {
   font: "Ubuntu";
-  color:darkgreen;
+  color:rgb(185, 219, 219);
+}
+
+p {
+  padding: 10px
 }
 
 code {
@@ -32,11 +36,28 @@ code {
   background-color: rgb(234, 115, 238);
 }
 
+.corner-blob-1 {
+  background-image: url('./svg/wave-haikei.svg');
+}
+
 .front {
   z-index: 99;
 }
+
+h1.page-title {
+  color: white;
+  position: absolute;
+  right: 20px;
+  font-size: 100px;
+
+}
 /* specific DIV styling rules */
 
+div.main-content {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
 div.center {
   margin: auto;
   
@@ -52,19 +73,34 @@ div.color-panel{
   transform: translate(3px, -3px);
 }
 
+div.top-bar {
+  aspect-ratio: 960/300;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+}
 
+
+div.rounded {
+  border-radius: 10px;
+}
+
+div.raised {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
 /* Anchor styling rules*/
 
 a.nostyle:link {
   text-decoration: inherit;
-  color: inherit;
-  cursor: auto;
+  
+  
 }
 
 a.nostyle:visited {
   text-decoration: inherit;
-  color: inherit;
-  cursor: auto;
+  
 }
 
 /* IMG styling rules */
@@ -107,15 +143,15 @@ h1.center {
 
 
 .grid-container {
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  padding: 70px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 46%), 1fr));
+  padding: 60px;
   grid-gap: 3rem;
   height: auto;
 
 }
-
-.grid-container > a, .grid-container > div {
+.grid-container > a {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 20px 0;

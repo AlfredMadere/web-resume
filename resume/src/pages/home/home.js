@@ -13,7 +13,7 @@ export default function AboutPage() {
   return (
     <div >
       <Intro />
-      <div className="post-intro">
+      <div className="main-content">
         <div className="grid-container">
           <PageSummary page="About" summary={aboutMeSummary}/>
           <PageSummary page="Expereince" summary={experienceSummary}/>
