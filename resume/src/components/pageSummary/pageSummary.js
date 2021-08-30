@@ -9,10 +9,10 @@ export default class PageSummary extends React.Component {
 
     render() {
         return (
-          <a className="grid-item nostyle drop-shadow" href={`/${this.props.page}`}>
+          <a className="grid-item nostyle drop-shadow color-theme-1" href={`/${this.props.page}`}>
               <div >
-                <h2 className="page-title">{this.props.page}</h2>
-                <p>{this.props.summary}</p>
+                <h2 className="summary-title">{this.props.page}</h2>
+                <p className="important-paragraph">{this.props.summary}</p>
               </div>
           </a>
             

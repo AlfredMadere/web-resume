@@ -16,8 +16,8 @@ export default class imageHoverableSpan extends React.Component {
       let x = this.state.mouseX;
       let y = this.state.mouseY;
       const image = document.querySelector(`.${this.props.children}`);
-      image.style.left = x - 75 + "px";
-      image.style.top = y - 75 + image.style.height / 2 + "px";
+      image.style.left = x + "px";
+      image.style.top = y + "px";
       console.log(image.style.left, image.style.top);
     }
   }
@@ -27,29 +27,31 @@ export default class imageHoverableSpan extends React.Component {
   }
 
   render() {
-      
     return (
-        <>
+      <>
         <span
-        className="photo-hoverable"
-        onMouseMove={this._onMouseMove}
-        onMouseEnter={() => {
-          this.setState({ mouseOver: true });
-          const image = document.querySelector(`.${this.props.children}`);
-          image.style.display = 'block';
-        }}
-        onMouseLeave={() => {
-          this.setState({ mouseOver: false });
-          const image = document.querySelector(`.${this.props.children}`);
-          image.style.display = 'none';
-        }}>
-            {this.props.children}
+          className="photo-hoverable"
+          onMouseMove={this._onMouseMove}
+          onMouseEnter={() => {
+            this.setState({ mouseOver: true });
+            const image = document.querySelector(`.${this.props.children}`);
+            image.style.height = 150 + "px";
+            image.style.width = 150 + "px";
+          }}
+          onMouseLeave={() => {
+            this.setState({ mouseOver: false });
+            const image = document.querySelector(`.${this.props.children}`);
+            image.style.height = 0 + "px";
+            image.style.width = 0 + "px";
+          }}
+        >
+          {this.props.children}
         </span>
-        <div class={`hoverimage ${this.props.children}`}>
-        <img className="popup-img" src={this.props.src} />
-      </div>
+        <img
+          className={`hoverimage ${this.props.children}`}
+          src={this.props.src}
+        />
       </>
-      
     );
   }
 }
