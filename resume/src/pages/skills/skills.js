@@ -1,12 +1,28 @@
 import React from "react";
 import Navigation from "../../components/navigation/navigation.js";
+import skills from '../../contentData/skills.js';
+import SkillDescription from '../../components/skillDescription/skillDescription.js';
+
+const mySkills = [skills.nodejs, skills.react, skills.html, skills.css];
 
 export default function SkillsPage() {
-  return (
-    <div>
-        <Navigation mode="dropdown-mode" />
-      <h1>I have a lot of skills</h1>
-      <p>And you better believe it motherfucker</p>
-    </div>
-  );
-}
+    return (
+      <div>
+        <div className="top-bar corner-blob-1">
+          <Navigation mode="dropdown-mode" />
+          <h1 className="page-title">Skills</h1>
+        </div>
+        <div className="main-content">
+          <div className="columb-container double-columb">
+              {
+                  mySkills.map((skill) => {
+                      return(<SkillDescription skill={skill} />);
+                  })
+              }
+          </div>
+          
+        </div>
+      </div>
+    );
+  }
+  

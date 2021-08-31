@@ -1,52 +1,5 @@
-div.content-container {
-  padding: 10px;
-}
-div.baseline-align {
-  display: flex;
-  align-items: baseline;
-  width: 100%;
-  justify-content: space-between;
 
-}
-div.mid-align {
-  display: flex;
-  align-items: vertical;
-}
 
-div.experience-logo {
-  width: 5vw;
-  height: 5vw;
-  border-radius: 50%;
-  padding: 10px;
-  background-color: white;
-  transition: transform .15s;
-}
-div.experience-logo:hover {
-    transform: scale(1.1);
-}
-
-div.services-container {
-    display: flex;
-    align-items: baseline;
-    justify-content: flex-end;
-    width: 50%;
-}
-
-a.service {
-    width: 50px;
-    height: 50px;
-    margin: 10px;
-    transition: transform .15s;
-}
-
-a.service:hover {
-    transform: scale(1.1);
-}
-
-a.service > img {
-    border-radius: 10px;
-    width: 100%;
-}
 
 div.experience-logo > img {
   width: 100%;
