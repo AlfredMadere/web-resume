@@ -21,7 +21,7 @@ const whatsMyWineServices = [{name: "capybara testing", link: "https://aws.amazo
 export default function ExperiencePage() {
   return (
     <div>
-    <div className="top-bar corner-blob-1">
+    <div className="top-bar top-bar-2">
       <Navigation mode="dropdown-mode" />
       <h1 className="page-title">Expereince</h1>
     </div>

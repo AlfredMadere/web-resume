@@ -3,7 +3,7 @@ import "../../index.css";
 
 export default function SkillDescription(props) {
   return (
-    <div className="grid-item rounded raised color-theme-1">
+    <div className="content-block">
       <div className="content-container">
         <div className="baseline-align content-left">
           <a className="service" href={props.skill.link} target="_blank">

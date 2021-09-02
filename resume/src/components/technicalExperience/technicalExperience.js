@@ -4,7 +4,7 @@ import "./technicalExperience.css";
 
 export default function TechnicalExperience(props) {
   return (
-    <div className="grid-item rounded raised color-theme-1">
+    <div className="content-block">
       <div className="content-container">
         <div className="baseline-align">
           <div className="experience-logo">

@@ -17,7 +17,7 @@ export default class RaisedTextContainer extends React.Component {
 
   render() {
     return (
-      <div className="grid-item rounded raised color-theme-1">
+      <div className="content-block">
         <p className="important-paragraph">Hey there, my name is <ImageHoverableSpan src={alfredImg}>Alfred</ImageHoverableSpan>. 
         I'm a developer and student from <ImageHoverableSpan src={austinImg}>Austin</ImageHoverableSpan> Texas focused on getting shit done. I love the outdoors so in my free time you'll likely find me on 
         the <ImageHoverableSpan src={riverImg}>River</ImageHoverableSpan> or in the <ImageHoverableSpan src={mountainImg}>Mountains</ImageHoverableSpan>. I also perform and teach 

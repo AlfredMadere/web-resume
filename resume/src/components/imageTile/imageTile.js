@@ -53,7 +53,7 @@ export default class imageTile extends React.Component {
     if (this.state.open) {
       tileStyle = {
         width: "62vw",
-        height: "62vw",
+        height: "auto",
         position: "fixed",
         top: "50%",
         left: "50%",

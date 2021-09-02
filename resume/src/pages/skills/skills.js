@@ -8,7 +8,7 @@ const mySkills = [skills.nodejs, skills.react, skills.html, skills.css];
 export default function SkillsPage() {
     return (
       <div>
-        <div className="top-bar corner-blob-1">
+        <div className="top-bar top-bar-2">
           <Navigation mode="dropdown-mode" />
           <h1 className="page-title">Skills</h1>
         </div>
