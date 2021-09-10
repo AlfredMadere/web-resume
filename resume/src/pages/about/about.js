@@ -1,7 +1,7 @@
 import React from "react";
 import Navigation from "../../components/navigation/navigation.js";
 import "../../index.js";
-import RaisedTextContainer from "../../components/raisedTextContainer/raisedTextContainer.js";
+import AboutParagraph from "../../components/raisedTextContainer/aboutParagraph.js";
 import ImageTileGallary from "../../components/imageTileGallary/imageTileGallary.js";
 import photos from '../../contentData/tilePhotos';
 
@@ -18,7 +18,7 @@ export default function AboutPage() {
       </div>
       <div className="main-content">
         <div className="columb-container">
-          <RaisedTextContainer paragraph={aboutMeParagraph} />
+          <AboutParagraph paragraph={aboutMeParagraph} />
           <ImageTileGallary data={photos} />
         </div>
         

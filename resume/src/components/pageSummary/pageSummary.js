@@ -19,9 +19,9 @@ export default class PageSummary extends React.Component {
         <div className="content-container">
           <div>
             <h2 className="summary-title">{this.props.page}</h2>
-            <p className="important-paragraph">{this.props.summary}</p>
-            <div className="align-right">
-              <img className="dynamic-arrow" src={forwardArrow} />
+            <p className="important-paragraph">{this.props.children}</p>
+            <div className="align-right-bottom">
+              <img  src={forwardArrow} />
             </div>
           </div>
         </div>

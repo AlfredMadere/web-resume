@@ -10,7 +10,7 @@ import saxophoneImg from '../../images/saxGrad.jpg';
 
 
 
-export default class RaisedTextContainer extends React.Component {
+export default class AboutParagraph extends React.Component {
   constructor(props) {
     super(props);
   }

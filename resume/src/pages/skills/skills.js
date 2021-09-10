@@ -3,8 +3,6 @@ import Navigation from "../../components/navigation/navigation.js";
 import skills from '../../contentData/skills.js';
 import SkillDescription from '../../components/skillDescription/skillDescription.js';
 
-const mySkills = [skills.nodejs, skills.react, skills.html, skills.css];
-
 export default function SkillsPage() {
     return (
       <div>
@@ -15,7 +13,7 @@ export default function SkillsPage() {
         <div className="main-content">
           <div className="columb-container double-columb">
               {
-                  mySkills.map((skill) => {
+                  Object.values(skills).map((skill) => {
                       return(<SkillDescription skill={skill} />);
                   })
               }

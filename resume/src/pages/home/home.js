@@ -4,10 +4,9 @@ import PageSummary from "../../components/pageSummary/pageSummary.js";
 import "./home.css";
 import "../../index.css";
 
-const aboutMeSummary = "I am lit and I am cool this is all about me you fool. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non p";
-const experienceSummary = "I have a lot of experience and I am very smart. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proid";
-const educationSummary = "I am one educated motherfucker let me tell you. Click to learn more. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaeca";
-const skillsSummary = "I have some absolutley raw fucking skills. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt i";
+const aboutMeSummary = " Proficient full stack Developer with 4+ years of extensive experience in Javascript/ES6, UI/UX & Design areas with a willingness to learn and master Machine Learning and Typescript. NodeJs expert, focused on getting shit done.";
+const educationSummary = "Computer science major at California Polytechnic University with a concentration in Machine Learning (2021 - present)";
+const skillsSummary = "Front end: 'ES6/ES 2017', 'JSX', 'ReactJS', 'Pug/Jade', 'Restful API', 'JSON', 'CSS3', 'Babel'. Back end: 'Node.js', 'Express.js', 'Ruby', 'Java'. Cloud: 'Amazon EC2', 'AWS ECS', 'AWS lambda', 'AWS S3'. Dev: 'Git', 'Docker', 'VS Code'";
 
 export default function AboutPage() {
   return (
@@ -15,10 +14,19 @@ export default function AboutPage() {
       <Intro />
       <div className="main-content">
         <div className="grid-container">
-          <PageSummary page="About" summary={aboutMeSummary}/>
-          <PageSummary page="Expereince" summary={experienceSummary}/>
-          <PageSummary page="Education" summary={educationSummary}/>
-          <PageSummary page="Skills" summary={skillsSummary}/>
+          <PageSummary page="About" >{aboutMeSummary}</PageSummary>
+          <PageSummary page="Expereince" >
+            <ul className="no-margin">
+              <li >Ivy Advantage</li>
+              <p className="no-margin">Full stack development</p>
+              <li > What's My Wine</li>
+              <p className="no-margin">Automated integration testing</p>
+              <li >Auto Auto</li>
+              <p className="no-margin" >UX and layout design</p>
+            </ul>
+            </PageSummary>
+          <PageSummary page="Education" >{educationSummary}</PageSummary>
+          <PageSummary page="Skills" >{skillsSummary}</PageSummary>
         </div>
       </div>
     </div>

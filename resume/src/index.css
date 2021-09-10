@@ -209,10 +209,23 @@ img.subtle-background {
   transform: rotate(180deg);
 }
 
-.align-right {
-  display: flex;
-  justify-content: flex-end;
+.align-right-bottom {
+  display: none;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  transition: transform 1s;
 }
+
+.align-right-bottom:hover {
+  transform: translate(3px, 0);
+}
+
+.grid-container > a:hover .align-right-bottom {
+  display: block;
+}
+
+
 /* HEADER styling rules */
 
 h1.center {
@@ -257,13 +270,8 @@ h1.center {
   background-color: var(--container);
 }
 
-.dynamic-arrow {
-  transition: transform 1s;
-}
 
-.dynamic-arrow:hover {
-  transform: translate(3px, 0);
-}
+
 h2.skill-title {
   margin-bottom: 0px;
   margin-left: 10px;
@@ -299,6 +307,10 @@ h2.skill-title {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.no-margin {
+  margin: 0px;
 }
 
 /* 

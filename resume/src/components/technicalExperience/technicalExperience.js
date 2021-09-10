@@ -3,6 +3,7 @@ import "../../index.css";
 import "./technicalExperience.css";
 
 export default function TechnicalExperience(props) {
+  console.log("inside of technical experience");
   return (
     <div className="content-block">
       <div className="content-container">
@@ -23,7 +24,7 @@ export default function TechnicalExperience(props) {
         </div>
         <h4 className="subtitle">{props.jobTitle}</h4>
         <div className="mid-align">
-          <p>{props.paragraph}</p>
+          <p dangerouslySetInnerHTML={{ __html: props.paragraph }}></p>
           <img className="experience-main-photo" src={props.majorPhoto} />
         </div>
       </div>

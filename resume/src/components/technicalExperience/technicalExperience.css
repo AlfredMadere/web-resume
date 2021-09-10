@@ -17,7 +17,7 @@ h4.subtitle {
 }
 .experience-main-photo {
   max-width: 40%;
-  max-height: 350px;
+  max-height: 250px;
   object-fit: scale-down;
   border-radius: 20px;
 
