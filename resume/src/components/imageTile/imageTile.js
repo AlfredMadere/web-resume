@@ -1,15 +1,13 @@
 import React from "react";
-import './imageTile.css'
+import "./imageTile.css";
 
 export default class imageTile extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      open: false,
       mouseOver: false,
     };
     // Bind properties to class instance
-    this._clickHandler = this._clickHandler.bind(this);
     this._mouseEnter = this._mouseEnter.bind(this);
     this._mouseLeave = this._mouseLeave.bind(this);
   }
@@ -31,52 +29,22 @@ export default class imageTile extends React.Component {
       });
     }
   }
-  _clickHandler(e) {
-    e.preventDefault();
-    if (this.state.open === false) {
-      this.setState({
-        open: true,
-      });
-    } else {
-      this.setState({
-        open: false,
-      });
-    }
-  }
 
   render() {
     // Modify styles based on state values
     let tileStyle = {};
-    let headerStyle = {};
-    let zoom = {};
     // When tile clicked
-    if (this.state.open) {
-      tileStyle = {
-        width: "62vw",
-        height: "auto",
-        position: "fixed",
-        top: "50%",
-        left: "50%",
-        margin: "0",
-        marginTop: "-31vw",
-        marginLeft: "-31vw",
-        boxShadow: "0 0 40px 5px rgba(0, 0, 0, 0.3)",
-        transform: "none",
-        
-      };
-    } else {
-      tileStyle = {
-        width: "18vw",
-        height: "18vw",
-      };
-    }
+
+    tileStyle = {
+      width: "18vw",
+      height: "18vw",
+    };
 
     return (
       <div className="tile">
         <img
           onMouseEnter={this._mouseEnter}
           onMouseLeave={this._mouseLeave}
-          onClick={this._clickHandler}
           src={this.props.data.image}
           alt={this.props.data.name}
           style={tileStyle}

@@ -153,14 +153,14 @@ div.color-panel {
 }
 
 div.top-bar {
-  aspect-ratio: 960/300;
+  height: 25vw;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
   width: 100%;
-  min-height: 150px;
-  max-height: 350;
+  min-height: 200px;
+  max-height: 325px;
 }
 
 /* Anchor styling rules*/
@@ -252,8 +252,12 @@ h1.center {
   height: auto;
 }
 
-.double-columb {
-  grid-template-columns: 1fr 1fr auto;
+.triple-columb {
+  grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  padding: 60px;
+  grid-gap: 3rem;
+  height: auto;
 }
 .grid-container {
   width: 100%;
@@ -313,6 +317,33 @@ h2.skill-title {
   margin: 0px;
 }
 
+ul.contact-info-list > li{
+  padding: 5px;
+  text-align: center;
+}
+
+ul.contact-info-list{
+  width: 100%;
+  margin: 0px;
+  padding-left: 0px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 150px;
+
+}
+footer.contact {
+  background-color: var(--rich-black-fogra-39);
+  color: white;
+}
+
+.footer-title {
+  margin: 0px;
+  padding: 20px;
+  padding-bottom: 0px;
+  font-size: 40px;
+}
 /* 
 this is some kind of coding joke haha code code code
 ODjoaijdslkjakdf dkfiejal dcode for each yaydahamdk cs major lmao stack over flowww

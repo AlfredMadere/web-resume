@@ -1,6 +1,8 @@
 import React from "react";
 import Navigation from "../../components/navigation/navigation.js";
 import EducationParagraph from "../../components/raisedTextContainer/educationParagraph.js";
+import ContactFooter from '../../components/contactFooter/contactFooter.js';
+
 
 
 export default function EducationPage() {
@@ -16,6 +18,7 @@ export default function EducationPage() {
           </div>
           
         </div>
+        <ContactFooter />
       </div>
   );
 }

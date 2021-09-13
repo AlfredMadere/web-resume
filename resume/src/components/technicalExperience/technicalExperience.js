@@ -3,7 +3,6 @@ import "../../index.css";
 import "./technicalExperience.css";
 
 export default function TechnicalExperience(props) {
-  console.log("inside of technical experience");
   return (
     <div className="content-block">
       <div className="content-container">
